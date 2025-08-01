@@ -3,18 +3,33 @@
     "id": "prod001",
     "name": "Stainless Steel GN Container 1/1",
     "category": "Kitchenware",
-    "price": 12.99,
-    "image": "/images/gn-container.jpg",
-    "description": "Professional-grade gastronorm container, ideal for buffets and commercial kitchens.",
-    "stock": 25
+    "subcategory": "Gastronorm Containers",
+    "brand": "GastroPro",
+    "sold": 134,
+    "packOf": [
+      { "size": 1, "unitPrice": 13.99 },
+      { "size": 12, "unitPrice": 12.49 }
+    ],
+    "images": [
+      "/images/gn-container-1.jpg",
+      "/images/gn-container-2.jpg"
+    ],
+    "description": "<p>High-quality stainless steel <strong>GN 1/1</strong> container, perfect for professional kitchen use. Dishwasher safe and stackable.</p>"
   },
   {
     "id": "prod002",
     "name": "Electric Salamander Grill 3kW",
     "category": "Cooking Equipment",
-    "price": 399.00,
-    "image": "/images/salamander.jpg",
-    "description": "Wall-mountable salamander grill with adjustable height and fast heat-up, perfect for horeca professionals.",
-    "stock": 5
+    "subcategory": "Grills",
+    "brand": "HeatMaster",
+    "sold": 27,
+    "packOf": [
+      { "size": 1, "unitPrice": 399.00 }
+    ],
+    "images": [
+      "/images/salamander-1.jpg",
+      "/images/salamander-2.jpg"
+    ],
+    "description": "<p>Wall-mountable <strong>3kW salamander grill</strong> with adjustable height. Ideal for melting, toasting, and finishing dishes fast.</p>"
   }
 ]

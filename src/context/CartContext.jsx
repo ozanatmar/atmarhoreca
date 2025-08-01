@@ -11,10 +11,12 @@ export function CartProvider({ children }) {
       const existing = prev.find((item) => item.id === product.id);
       if (existing) {
         return prev.map((item) =>
-          item.id === product.id ? { ...item, quantity: item.quantity + 1 } : item
+          item.id === product.id
+            ? { ...item, quantity: item.quantity + product.quantity }
+            : item
         );
       }
-      return [...prev, { ...product, quantity: 1 }];
+      return [...prev, product];
     });
   };
 
@@ -29,7 +31,10 @@ export function CartProvider({ children }) {
   };
 
   const totalItems = cartItems.reduce((sum, item) => sum + item.quantity, 0);
-  const totalPrice = cartItems.reduce((sum, item) => sum + item.price * item.quantity, 0);
+  const totalPrice = cartItems.reduce(
+    (sum, item) => sum + (item.totalPackPrice || 0) * item.quantity,
+    0
+  );
 
   return (
     <CartContext.Provider
