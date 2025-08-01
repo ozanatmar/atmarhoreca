@@ -1,0 +1,20 @@
+[
+  {
+    "id": "prod001",
+    "name": "Stainless Steel GN Container 1/1",
+    "category": "Kitchenware",
+    "price": 12.99,
+    "image": "/images/gn-container.jpg",
+    "description": "Professional-grade gastronorm container, ideal for buffets and commercial kitchens.",
+    "stock": 25
+  },
+  {
+    "id": "prod002",
+    "name": "Electric Salamander Grill 3kW",
+    "category": "Cooking Equipment",
+    "price": 399.00,
+    "image": "/images/salamander.jpg",
+    "description": "Wall-mountable salamander grill with adjustable height and fast heat-up, perfect for horeca professionals.",
+    "stock": 5
+  }
+]
